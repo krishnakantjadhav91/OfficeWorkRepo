@@ -2,24 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9677" started-at="2018-03-08T11:54:12Z" finished-at="2018-03-08T11:54:21Z">
+  <suite name="Default suite" duration-ms="71" started-at="2018-03-08T12:31:14Z" finished-at="2018-03-08T12:31:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9677" started-at="2018-03-08T11:54:12Z" finished-at="2018-03-08T11:54:21Z">
-      <class name="tests.RunTest">
-        <test-method status="PASS" signature="lauchBrowser()[pri:0, instance:tests.RunTest@e45eb6]" name="lauchBrowser" is-config="true" duration-ms="6738" started-at="2018-03-08T11:54:12Z" finished-at="2018-03-08T11:54:18Z">
+    <test name="Default test" duration-ms="71" started-at="2018-03-08T12:31:14Z" finished-at="2018-03-08T12:31:14Z">
+      <class name="tests.Run">
+        <test-method status="PASS" signature="T1()[pri:0, instance:tests.Run@bd1b6a]" name="T1" duration-ms="31" started-at="2018-03-08T12:31:14Z" finished-at="2018-03-08T12:31:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- lauchBrowser -->
-        <test-method status="PASS" signature="testRun()[pri:0, instance:tests.RunTest@e45eb6]" name="testRun" duration-ms="2071" started-at="2018-03-08T11:54:18Z" finished-at="2018-03-08T11:54:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRun -->
-        <test-method status="PASS" signature="tearOut()[pri:0, instance:tests.RunTest@e45eb6]" name="tearOut" is-config="true" duration-ms="832" started-at="2018-03-08T11:54:20Z" finished-at="2018-03-08T11:54:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearOut -->
-      </class> <!-- tests.RunTest -->
+        </test-method> <!-- T1 -->
+      </class> <!-- tests.Run -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

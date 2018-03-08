@@ -1,11 +1,15 @@
 package tests;
 
+import org.testng.annotations.Test;
+
 public class Run 
 {
-	public static void main(String[] args) 
+	@Test
+	public void T1()
 	{
-		System.out.println("Program Executed...");
-		
+		System.out.println("Run is executed...");
 	}
+	
+	
 
 }
