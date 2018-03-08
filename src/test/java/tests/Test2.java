@@ -16,13 +16,11 @@ public class Test2
 	{		
 		System.out.println("Testcase1 is running...");
 		System.setProperty("webdriver.chrome.driver", "D:\\Softwares\\chromedriver_win32\\chromedriver.exe") ;
-		dr = new ChromeDriver() ;
-		
+		dr = new ChromeDriver() ;		
 		dr.get("https://mvnrepository.com/");
 		WebElement chk = dr.findElement(By.xpath("//*[@id='maincontent']/h1")) ;		
 		Assert.assertTrue(chk.isDisplayed());		
-		System.out.println("T1 is executed...");
-		
+		System.out.println("T1 is executed...");		
 		
 	}
 	
