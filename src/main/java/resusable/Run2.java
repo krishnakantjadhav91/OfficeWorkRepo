@@ -1,14 +1,11 @@
 package resusable;
 
-import org.junit.Test;
 
 public class Run2 
 {
-
-	@Test
-	public void T1()
+	public static void main(String[] args) 
 	{
-		System.out.println("Run is executed...");
+		System.out.println("Run2 Executed...");
 	}
 
 }
