@@ -23,6 +23,7 @@ public class Test2
 		Assert.assertTrue(chk.isDisplayed());		
 		System.out.println("T1 is executed...");
 		
+		
 	}
 	
 	@Test
