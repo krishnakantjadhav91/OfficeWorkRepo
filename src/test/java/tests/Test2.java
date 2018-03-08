@@ -20,6 +20,7 @@ public class Test2
 		dr.get("https://mvnrepository.com/");
 		WebElement chk = dr.findElement(By.xpath("//*[@id='maincontent']/h1")) ;
 		Assert.assertTrue(chk.isDisplayed());
+		
 		System.out.println("T1 is executed...");
 		
 	}
