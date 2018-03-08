@@ -14,6 +14,7 @@ public class Test2
 	@Test
 	public void T1()
 	{
+		String t1 ;
 		System.out.println("Testcase1 is running...");
 		System.setProperty("webdriver.chrome.driver", "D:\\Softwares\\chromedriver_win32\\chromedriver.exe") ;
 		dr = new ChromeDriver() ;
