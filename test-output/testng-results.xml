@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6692" started-at="2018-03-08T13:19:00Z" finished-at="2018-03-08T13:19:07Z">
+  <suite name="Default suite" duration-ms="14082" started-at="2018-03-08T15:31:29Z" finished-at="2018-03-08T15:31:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6692" started-at="2018-03-08T13:19:00Z" finished-at="2018-03-08T13:19:07Z">
+    <test name="Default test" duration-ms="14082" started-at="2018-03-08T15:31:29Z" finished-at="2018-03-08T15:31:43Z">
       <class name="tests.Test2">
-        <test-method status="PASS" signature="T1()[pri:0, instance:tests.Test2@c4039c]" name="T1" duration-ms="2694" started-at="2018-03-08T13:19:00Z" finished-at="2018-03-08T13:19:03Z">
+        <test-method status="PASS" signature="T1()[pri:0, instance:tests.Test2@c4039c]" name="T1" duration-ms="6761" started-at="2018-03-08T15:31:29Z" finished-at="2018-03-08T15:31:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- T1 -->
-        <test-method status="PASS" signature="tearOut()[pri:0, instance:tests.Test2@c4039c]" name="tearOut" is-config="true" duration-ms="1148" started-at="2018-03-08T13:19:03Z" finished-at="2018-03-08T13:19:04Z">
+        <test-method status="PASS" signature="tearOut()[pri:0, instance:tests.Test2@c4039c]" name="tearOut" is-config="true" duration-ms="827" started-at="2018-03-08T15:31:35Z" finished-at="2018-03-08T15:31:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearOut -->
-        <test-method status="PASS" signature="T2()[pri:0, instance:tests.Test2@c4039c]" name="T2" duration-ms="1996" started-at="2018-03-08T13:19:04Z" finished-at="2018-03-08T13:19:06Z">
+        <test-method status="PASS" signature="T2()[pri:0, instance:tests.Test2@c4039c]" name="T2" duration-ms="5695" started-at="2018-03-08T15:31:36Z" finished-at="2018-03-08T15:31:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- T2 -->
-        <test-method status="PASS" signature="tearOut()[pri:0, instance:tests.Test2@c4039c]" name="tearOut" is-config="true" duration-ms="802" started-at="2018-03-08T13:19:06Z" finished-at="2018-03-08T13:19:07Z">
+        <test-method status="PASS" signature="tearOut()[pri:0, instance:tests.Test2@c4039c]" name="tearOut" is-config="true" duration-ms="757" started-at="2018-03-08T15:31:42Z" finished-at="2018-03-08T15:31:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearOut -->
