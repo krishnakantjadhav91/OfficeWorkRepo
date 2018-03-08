@@ -13,8 +13,7 @@ public class Test2
 	WebDriver dr ;
 	@Test
 	public void T1()
-	{
-		String t1 
+	{		
 		System.out.println("Testcase1 is running...");
 		System.setProperty("webdriver.chrome.driver", "D:\\Softwares\\chromedriver_win32\\chromedriver.exe") ;
 		dr = new ChromeDriver() ;
@@ -22,6 +21,7 @@ public class Test2
 		WebElement chk = dr.findElement(By.xpath("//*[@id='maincontent']/h1")) ;
 		Assert.assertTrue(chk.isDisplayed());
 		System.out.println("T1 is executed...");
+		
 	}
 	
 	@Test
