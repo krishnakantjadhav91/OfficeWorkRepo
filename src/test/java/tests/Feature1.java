@@ -1,22 +1,22 @@
 package tests;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
+import resusable.Master;
 
-public class Feature1 
-{
-	WebDriver dr ;
+public class Feature1 extends Master
+{	
+	@BeforeMethod
+	public void launchBrowser()
+	{
+		browserLaunch();		
+	}
+	
 	@Test
 	public void T1()
-	{
-		System.out.println("Testcase1 is running...");
-		System.setProperty("webdriver.chrome.driver", "D:\\Softwares\\chromedriver_win32\\chromedriver.exe") ;
-		dr = new ChromeDriver() ;		
-		dr.get("https://mvnrepository.com/");
+	{		
 		WebElement chk = dr.findElement(By.xpath("//*[@id='maincontent']/h1")) ;		
 		Assert.assertTrue(chk.isDisplayed());		
 		System.out.println("T1 is executed...");
@@ -24,11 +24,7 @@ public class Feature1
 	
 	@Test
 	public void T2()
-	{
-		System.out.println("Testcase1 is running...");
-		System.setProperty("webdriver.chrome.driver", "D:\\Softwares\\chromedriver_win32\\chromedriver.exe") ;
-		dr = new ChromeDriver() ;		
-		dr.get("https://mvnrepository.com/");
+	{		
 		WebElement chk = dr.findElement(By.xpath("//*[@id='maincontent']/h1")) ;		
 		Assert.assertTrue(chk.isDisplayed());		
 		System.out.println("T1 is executed...");

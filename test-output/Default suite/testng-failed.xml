@@ -3,12 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.Test2">
+      <class name="tests.Feature1">
         <methods>
-          <include name="tearOut"/>
+          <include name="T1"/>
           <include name="T2"/>
+          <include name="launchBrowser"/>
+          <include name="tearOut"/>
         </methods>
-      </class> <!-- tests.Test2 -->
+      </class> <!-- tests.Feature1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
