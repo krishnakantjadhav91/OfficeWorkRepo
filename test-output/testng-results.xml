@@ -1,71 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="2" total="5" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="26482" started-at="2018-03-09T12:14:31Z" finished-at="2018-03-09T12:14:57Z">
+  <suite name="Suite" duration-ms="17320" started-at="2018-03-09T13:16:32Z" finished-at="2018-03-09T13:16:49Z">
     <groups>
+      <group name="sanity">
+        <method signature="Feature1.T2()[pri:0, instance:tests.Feature1@3a8624]" name="T2" class="tests.Feature1"/>
+        <method signature="Test2.T2()[pri:0, instance:tests.Test2@1ce4f0a]" name="T2" class="tests.Test2"/>
+        <method signature="Test2.T3()[pri:0, instance:tests.Test2@1ce4f0a]" name="T3" class="tests.Test2"/>
+      </group> <!-- sanity -->
     </groups>
-    <test name="Test" duration-ms="26482" started-at="2018-03-09T12:14:31Z" finished-at="2018-03-09T12:14:57Z">
+    <test name="Test" duration-ms="17320" started-at="2018-03-09T13:16:32Z" finished-at="2018-03-09T13:16:49Z">
       <class name="tests.Test2">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:tests.Test2@17fd0e6]" name="launchBrowser" is-config="true" duration-ms="8578" started-at="2018-03-09T12:14:31Z" finished-at="2018-03-09T12:14:39Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:tests.Test2@1ce4f0a]" name="launchBrowser" is-config="true" duration-ms="8520" started-at="2018-03-09T13:16:32Z" finished-at="2018-03-09T13:16:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="T1()[pri:0, instance:tests.Test2@17fd0e6]" name="T1" duration-ms="72" started-at="2018-03-09T12:14:39Z" finished-at="2018-03-09T12:14:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- T1 -->
-        <test-method status="PASS" signature="tearOut()[pri:0, instance:tests.Test2@17fd0e6]" name="tearOut" is-config="true" duration-ms="894" started-at="2018-03-09T12:14:39Z" finished-at="2018-03-09T12:14:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearOut -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:tests.Test2@17fd0e6]" name="launchBrowser" is-config="true" duration-ms="7989" started-at="2018-03-09T12:14:40Z" finished-at="2018-03-09T12:14:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="T2()[pri:0, instance:tests.Test2@17fd0e6]" name="T2" duration-ms="50" started-at="2018-03-09T12:14:48Z" finished-at="2018-03-09T12:14:48Z">
+        <test-method status="PASS" signature="T2()[pri:0, instance:tests.Test2@1ce4f0a]" name="T2" duration-ms="65" started-at="2018-03-09T13:16:40Z" finished-at="2018-03-09T13:16:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- T2 -->
-        <test-method status="PASS" signature="tearOut()[pri:0, instance:tests.Test2@17fd0e6]" name="tearOut" is-config="true" duration-ms="884" started-at="2018-03-09T12:14:48Z" finished-at="2018-03-09T12:14:49Z">
+        <test-method status="PASS" signature="tearOut()[pri:0, instance:tests.Test2@1ce4f0a]" name="tearOut" is-config="true" duration-ms="834" started-at="2018-03-09T13:16:40Z" finished-at="2018-03-09T13:16:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearOut -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:tests.Test2@17fd0e6]" name="launchBrowser" is-config="true" duration-ms="7149" started-at="2018-03-09T12:14:49Z" finished-at="2018-03-09T12:14:56Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:tests.Test2@1ce4f0a]" name="launchBrowser" is-config="true" duration-ms="6926" started-at="2018-03-09T13:16:41Z" finished-at="2018-03-09T13:16:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="T3()[pri:0, instance:tests.Test2@17fd0e6]" name="T3" duration-ms="53" started-at="2018-03-09T12:14:56Z" finished-at="2018-03-09T12:14:56Z">
+        <test-method status="PASS" signature="T3()[pri:0, instance:tests.Test2@1ce4f0a]" name="T3" duration-ms="50" started-at="2018-03-09T13:16:48Z" finished-at="2018-03-09T13:16:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- T3 -->
-        <test-method status="PASS" signature="tearOut()[pri:0, instance:tests.Test2@17fd0e6]" name="tearOut" is-config="true" duration-ms="775" started-at="2018-03-09T12:14:57Z" finished-at="2018-03-09T12:14:57Z">
+        <test-method status="PASS" signature="tearOut()[pri:0, instance:tests.Test2@1ce4f0a]" name="tearOut" is-config="true" duration-ms="889" started-at="2018-03-09T13:16:48Z" finished-at="2018-03-09T13:16:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearOut -->
       </class> <!-- tests.Test2 -->
       <class name="tests.Feature1">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:tests.Feature1@1c62251]" name="launchBrowser" is-config="true" duration-ms="8639" started-at="2018-03-09T12:14:31Z" finished-at="2018-03-09T12:14:39Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:tests.Feature1@3a8624]" name="launchBrowser" is-config="true" duration-ms="8529" started-at="2018-03-09T13:16:32Z" finished-at="2018-03-09T13:16:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="T1()[pri:0, instance:tests.Feature1@1c62251]" name="T1" duration-ms="65" started-at="2018-03-09T12:14:39Z" finished-at="2018-03-09T12:14:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- T1 -->
-        <test-method status="PASS" signature="tearOut()[pri:0, instance:tests.Feature1@1c62251]" name="tearOut" is-config="true" duration-ms="874" started-at="2018-03-09T12:14:40Z" finished-at="2018-03-09T12:14:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearOut -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:tests.Feature1@1c62251]" name="launchBrowser" is-config="true" duration-ms="7873" started-at="2018-03-09T12:14:40Z" finished-at="2018-03-09T12:14:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="T2()[pri:0, instance:tests.Feature1@1c62251]" name="T2" duration-ms="49" started-at="2018-03-09T12:14:48Z" finished-at="2018-03-09T12:14:48Z">
+        <test-method status="PASS" signature="T2()[pri:0, instance:tests.Feature1@3a8624]" name="T2" duration-ms="56" started-at="2018-03-09T13:16:40Z" finished-at="2018-03-09T13:16:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- T2 -->
-        <test-method status="PASS" signature="tearOut()[pri:0, instance:tests.Feature1@1c62251]" name="tearOut" is-config="true" duration-ms="933" started-at="2018-03-09T12:14:48Z" finished-at="2018-03-09T12:14:49Z">
+        <test-method status="PASS" signature="tearOut()[pri:0, instance:tests.Feature1@3a8624]" name="tearOut" is-config="true" duration-ms="889" started-at="2018-03-09T13:16:40Z" finished-at="2018-03-09T13:16:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearOut -->

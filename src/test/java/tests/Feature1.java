@@ -8,13 +8,13 @@ import resusable.Master;
 
 public class Feature1 extends Master
 {	
-	@BeforeMethod
+	@BeforeMethod(groups="start")
 	public void launchBrowser()
 	{
 		browserLaunch();		
 	}
 	
-	@Test
+	@Test(groups="smoke")
 	public void T1()
 	{		
 		WebElement chk = dr.findElement(By.xpath("//*[@id='maincontent']/h1")) ;		
@@ -22,7 +22,7 @@ public class Feature1 extends Master
 		System.out.println("T1 is executed...");
 	}
 	
-	@Test
+	@Test(groups="sanity")
 	public void T2()
 	{		
 		WebElement chk = dr.findElement(By.xpath("//*[@id='maincontent']/h1")) ;		
@@ -30,7 +30,7 @@ public class Feature1 extends Master
 		System.out.println("T1 is executed...");
 	}
 	
-	@AfterMethod
+	@AfterMethod(groups="end")
 	public void tearOut()
 	{
 		dr.quit();

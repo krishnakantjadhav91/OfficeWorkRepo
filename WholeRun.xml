@@ -2,7 +2,17 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="classes">
   <test name="Test">
-    <classes>
+  <groups>
+  	<define name="run">
+  		<include name="sanity"/>
+  		<include name="start"/>
+  		<include name="end"/>
+  	</define>
+  	<run>  		
+  		<include name="run"/>
+  	</run>
+  </groups>  	
+    <classes>    
       <class name="tests.Test2"/>
       <class name="tests.Feature1"/>
     </classes>    

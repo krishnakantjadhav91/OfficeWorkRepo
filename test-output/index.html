@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Suite">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,16 +100,6 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.Test2" hash-for-method="T1">T1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.Feature1" hash-for-method="T1">T1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.Test2" hash-for-method="T2">T2</a> <!-- method navigator-link -->
@@ -145,13 +135,6 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="T1">
-                  </a> <!-- T1 -->
-                  <span class="method-name">T1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="T2">
                   </a> <!-- T2 -->
                   <span class="method-name">T2</span>
@@ -174,13 +157,6 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="T1">
-                  </a> <!-- T1 -->
-                  <span class="method-name">T1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="T2">
                   </a> <!-- T2 -->
                   <span class="method-name">T2</span>
@@ -197,8 +173,18 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;3&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot; parallel=&quot;classes&quot;&gt;
-  &lt;test thread-count=&quot;3&quot; name=&quot;Test&quot; parallel=&quot;classes&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot; parallel=&quot;classes&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; parallel=&quot;classes&quot;&gt;
+    &lt;groups&gt;
+      &lt;define name=&quot;run&quot;&gt;
+        &lt;include name=&quot;sanity&quot;/&gt;
+        &lt;include name=&quot;start&quot;/&gt;
+        &lt;include name=&quot;end&quot;/&gt;
+      &lt;/define&gt; &lt;!-- run --&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;run&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.Test2&quot;/&gt;
       &lt;class name=&quot;tests.Feature1&quot;/&gt;
@@ -225,6 +211,18 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">T2</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">T3</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -241,32 +239,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'T1')
+data.setCell(0, 1, 'T2')
 data.setCell(0, 2, 'tests.Test2')
-data.setCell(0, 3, 72);
+data.setCell(0, 3, 65);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'T1')
+data.setCell(1, 1, 'T2')
 data.setCell(1, 2, 'tests.Feature1')
-data.setCell(1, 3, 65);
+data.setCell(1, 3, 56);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'T3')
 data.setCell(2, 2, 'tests.Test2')
-data.setCell(2, 3, 53);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'T2')
-data.setCell(3, 2, 'tests.Test2')
-data.setCell(3, 3, 50);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'T2')
-data.setCell(4, 2, 'tests.Feature1')
-data.setCell(4, 3, 49);
+data.setCell(2, 3, 50);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 289 ms</span>
+              <span class="suite-total-time">Total running time: 171 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -281,9 +271,23 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.Test2</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">T1</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.Feature1</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">T1</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -308,74 +312,38 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">tests.Test2</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">T1</span>
-                <span class="method-start">8578 ms</span>
+                <span class="method-name">T2</span>
+                <span class="method-start">8520 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.Feature1</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">T1</span>
-                <span class="method-start">8639 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.Test2</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearOut</span>
-                <span class="method-start">8652 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.Feature1</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearOut</span>
-                <span class="method-start">8705 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.Test2</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">launchBrowser</span>
-                <span class="method-start">9546 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.Feature1</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">launchBrowser</span>
-                <span class="method-start">9580 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">T2</span>
-                <span class="method-start">17453 ms</span>
+                <span class="method-start">8529 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearOut</span>
-                <span class="method-start">17503 ms</span>
+                <span class="method-start">8587 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.Test2</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">T2</span>
-                <span class="method-start">17535 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearOut</span>
-                <span class="method-start">17586 ms</span>
+                <span class="method-start">8588 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">18470 ms</span>
+                <span class="method-start">9422 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">T3</span>
-                <span class="method-start">25619 ms</span>
+                <span class="method-start">16348 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearOut</span>
-                <span class="method-start">25674 ms</span>
+                <span class="method-start">16399 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
