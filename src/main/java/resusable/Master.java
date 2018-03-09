@@ -17,6 +17,7 @@ public class Master
 		dr.manage().window().maximize();
 		dr.get("https://mvnrepository.com/");
 		dr.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS) ;
+		
 	}
 	
 
