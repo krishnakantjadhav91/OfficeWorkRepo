@@ -26,7 +26,7 @@ public class Feature1 extends Master
 	public void T2()
 	{		
 		WebElement chk = dr.findElement(By.xpath("//*[@id='maincontent']/h1")) ;		
-		Assert.assertFalse(chk.isDisplayed());		
+		Assert.assertTrue(chk.isDisplayed());		
 		System.out.println("T1 is executed...");
 	}
 	
