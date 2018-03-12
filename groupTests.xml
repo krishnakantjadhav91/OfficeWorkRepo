@@ -12,9 +12,8 @@
   		<include name="run"/>
   	</run>
   </groups>  	
-    <classes>    
-      <class name="tests.Test2"/>
-      <class name="tests.Feature1"/>
+    <classes>      
+      <class name="tests.Regression"/>
     </classes>    
   </test> <!-- Test -->
 </suite> <!-- Suite -->
