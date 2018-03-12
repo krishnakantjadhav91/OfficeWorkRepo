@@ -6,7 +6,6 @@
       <class name="tests.Feature1">
         <methods>
           <include name="T1"/>
-          <include name="T2"/>
           <include name="launchBrowser"/>
           <include name="tearOut"/>
         </methods>
