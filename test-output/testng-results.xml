@@ -1,69 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="48770" started-at="2018-03-12T16:16:18Z" finished-at="2018-03-12T16:17:07Z">
+  <suite name="Default suite" duration-ms="23675" started-at="2018-03-13T10:05:26Z" finished-at="2018-03-13T10:05:49Z">
     <groups>
       <group name="smoke">
-        <method signature="Regression.T2()[pri:0, instance:tests.Regression@ef9176]" name="T2" class="tests.Regression"/>
+        <method signature="Regression.T2()[pri:0, instance:tests.Regression@1622fdf]" name="T2" class="tests.Regression"/>
       </group> <!-- smoke -->
       <group name="sanity">
-        <method signature="Regression.T1()[pri:0, instance:tests.Regression@ef9176]" name="T1" class="tests.Regression"/>
+        <method signature="Regression.T1()[pri:0, instance:tests.Regression@1622fdf]" name="T1" class="tests.Regression"/>
       </group> <!-- sanity -->
     </groups>
-    <test name="Test" duration-ms="48770" started-at="2018-03-12T16:16:18Z" finished-at="2018-03-12T16:17:07Z">
-      <class name="tests.SmokeTest">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:tests.SmokeTest@166e5bd]" name="launchBrowser" is-config="true" duration-ms="10644" started-at="2018-03-12T16:16:42Z" finished-at="2018-03-12T16:16:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="T1()[pri:0, instance:tests.SmokeTest@166e5bd]" name="T1" duration-ms="570" started-at="2018-03-12T16:16:53Z" finished-at="2018-03-12T16:16:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- T1 -->
-        <test-method status="PASS" signature="tearOut()[pri:0, instance:tests.SmokeTest@166e5bd]" name="tearOut" is-config="true" duration-ms="821" started-at="2018-03-12T16:16:53Z" finished-at="2018-03-12T16:16:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearOut -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:tests.SmokeTest@166e5bd]" name="launchBrowser" is-config="true" duration-ms="11491" started-at="2018-03-12T16:16:54Z" finished-at="2018-03-12T16:17:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="T2()[pri:0, instance:tests.SmokeTest@166e5bd]" name="T2" duration-ms="509" started-at="2018-03-12T16:17:06Z" finished-at="2018-03-12T16:17:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- T2 -->
-        <test-method status="PASS" signature="tearOut()[pri:0, instance:tests.SmokeTest@166e5bd]" name="tearOut" is-config="true" duration-ms="837" started-at="2018-03-12T16:17:06Z" finished-at="2018-03-12T16:17:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearOut -->
-      </class> <!-- tests.SmokeTest -->
+    <test name="Default test" duration-ms="23675" started-at="2018-03-13T10:05:26Z" finished-at="2018-03-13T10:05:49Z">
       <class name="tests.Regression">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:tests.Regression@ef9176]" name="launchBrowser" is-config="true" duration-ms="10397" started-at="2018-03-12T16:16:18Z" finished-at="2018-03-12T16:16:29Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:tests.Regression@1622fdf]" name="launchBrowser" is-config="true" duration-ms="10963" started-at="2018-03-13T10:05:26Z" finished-at="2018-03-13T10:05:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="T1()[pri:0, instance:tests.Regression@ef9176]" name="T1" duration-ms="591" started-at="2018-03-12T16:16:29Z" finished-at="2018-03-12T16:16:29Z">
+        <test-method status="PASS" signature="T1()[pri:0, instance:tests.Regression@1622fdf]" name="T1" duration-ms="665" started-at="2018-03-13T10:05:37Z" finished-at="2018-03-13T10:05:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- T1 -->
-        <test-method status="PASS" signature="tearOut()[pri:0, instance:tests.Regression@ef9176]" name="tearOut" is-config="true" duration-ms="783" started-at="2018-03-12T16:16:29Z" finished-at="2018-03-12T16:16:30Z">
+        <test-method status="PASS" signature="tearOut()[pri:0, instance:tests.Regression@1622fdf]" name="tearOut" is-config="true" duration-ms="862" started-at="2018-03-13T10:05:37Z" finished-at="2018-03-13T10:05:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearOut -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:tests.Regression@ef9176]" name="launchBrowser" is-config="true" duration-ms="10768" started-at="2018-03-12T16:16:30Z" finished-at="2018-03-12T16:16:41Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:tests.Regression@1622fdf]" name="launchBrowser" is-config="true" duration-ms="9595" started-at="2018-03-13T10:05:38Z" finished-at="2018-03-13T10:05:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="T2()[pri:0, instance:tests.Regression@ef9176]" name="T2" duration-ms="518" started-at="2018-03-12T16:16:41Z" finished-at="2018-03-12T16:16:41Z">
+        <test-method status="PASS" signature="T2()[pri:0, instance:tests.Regression@1622fdf]" name="T2" duration-ms="598" started-at="2018-03-13T10:05:48Z" finished-at="2018-03-13T10:05:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- T2 -->
-        <test-method status="PASS" signature="tearOut()[pri:0, instance:tests.Regression@ef9176]" name="tearOut" is-config="true" duration-ms="804" started-at="2018-03-12T16:16:41Z" finished-at="2018-03-12T16:16:42Z">
+        <test-method status="PASS" signature="tearOut()[pri:0, instance:tests.Regression@1622fdf]" name="tearOut" is-config="true" duration-ms="955" started-at="2018-03-13T10:05:48Z" finished-at="2018-03-13T10:05:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearOut -->
       </class> <!-- tests.Regression -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
